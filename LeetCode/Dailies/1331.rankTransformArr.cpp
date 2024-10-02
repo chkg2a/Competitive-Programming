@@ -3,27 +3,23 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> arrayRankTransform(vector<int> &arr) {
-    unordered_map<int,int> umap;
-    vector<int> copyArr = arr;
-    vector<int> output;
-    output.reserve(4096);
-    sort(copyArr.begin(),copyArr.end());
-    for(int i = 0; i < arr.size(); i++){
-      umap[arr[i]] = i;
+    vector<int> arrayRankTransform(vector<int>& arr) {
+        // Store the rank for each number in arr
+        map<int, int> numToRank;
+        vector<int> sortedArr(arr);
+        sort(sortedArr.begin(), sortedArr.end());
+        int rank = 1;
+        for (int i = 0; i < sortedArr.size(); i++) {
+            if (i > 0 && sortedArr[i] > sortedArr[i - 1]) {
+                rank++;
+            }
+            numToRank[sortedArr[i]] = rank;
+        }
+        for (int i = 0; i < arr.size(); i++) {
+            arr[i] = numToRank[arr[i]];
+        }
+        return arr;
     }
-    int arr_size = arr.size();
-    int rank = 1;
-    int i = 0;
-    while(arr_size-- || arr_size == 1){
-      if(umap[copyArr[i]] != umap[copyArr[i+1]]){
-        rank++; 
-      }
-      output[umap[arr[i]]] = rank;
-      i++;
-    }
-    return output;
-  }
 };
 
 int main(int argc, char *argv[]) {
