@@ -1,35 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isValid(string s) {
-  stack<char> stk;
-  unordered_map<char,char> umap ={
-    {'}','{'},
-    {']','['},
-    {')','('}
-  };
-  for(auto x : s){
-    if(umap.count(x)){
-      if(!stk.empty() && stk.top() == umap[x]){
-        stk.pop();
-      }else{
-        return false;
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+      int index = 0; 
+      for(int i = 0; i < nums.size(); i++){
+        if(nums[i] != val){
+          nums[index] = nums[i];
+          index++;
+        }
       }
-    }else{
-      stk.push(x);
+      return index;
     }
-  }
-  if(stk.empty()){
-    return true;
-  }
-  return false;
-} 
+};  
 
 int main(int argc, char *argv[]) {
   auto start = std::chrono::high_resolution_clock::now();
 
-  string s = "([{}])";
-  cout << isValid(s);
+  Solution sol;
+  vector<int> nums = {0,1,2,2,3,0,4,2};
+  int val = 2;
+  cout << sol.removeElement(nums, val);
 
   std::cout << std::endl;
   auto end = std::chrono::high_resolution_clock::now();
