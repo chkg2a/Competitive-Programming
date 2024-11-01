@@ -1,0 +1,210 @@
+[
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_isalnum.o",
+      "src/fn_char/fn_isalnum.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_isalnum.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_isalnum.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_isalpha.o",
+      "src/fn_char/fn_isalpha.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_isalpha.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_isalpha.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_isascii.o",
+      "src/fn_char/fn_isascii.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_isascii.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_isascii.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_isdigit.o",
+      "src/fn_char/fn_isdigit.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_isdigit.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_isdigit.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_isprint.o",
+      "src/fn_char/fn_isprint.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_isprint.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_isprint.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_tolower.o",
+      "src/fn_char/fn_tolower.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_tolower.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_tolower.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_char/fn_toupper.o",
+      "src/fn_char/fn_toupper.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_char/fn_toupper.c",
+    "output": "/home/xrenne/projects/libs/src/fn_char/fn_toupper.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_str/fn_atoi.o",
+      "src/fn_str/fn_atoi.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_str/fn_atoi.c",
+    "output": "/home/xrenne/projects/libs/src/fn_str/fn_atoi.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_str/fn_strlcat.o",
+      "src/fn_str/fn_strlcat.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_str/fn_strlcat.c",
+    "output": "/home/xrenne/projects/libs/src/fn_str/fn_strlcat.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_str/fn_strlcpy.o",
+      "src/fn_str/fn_strlcpy.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_str/fn_strlcpy.c",
+    "output": "/home/xrenne/projects/libs/src/fn_str/fn_strlcpy.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_str/fn_strlen.o",
+      "src/fn_str/fn_strlen.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_str/fn_strlen.c",
+    "output": "/home/xrenne/projects/libs/src/fn_str/fn_strlen.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-c",
+      "-o",
+      "src/fn_dsa/bro.o",
+      "src/fn_dsa/bro.cpp"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/src/fn_dsa/bro.cpp",
+    "output": "/home/xrenne/projects/libs/src/fn_dsa/bro.o"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I./includes",
+      "-o",
+      "a.out",
+      "test/test.c"
+    ],
+    "directory": "/home/xrenne/projects/libs",
+    "file": "/home/xrenne/projects/libs/test/test.c",
+    "output": "/home/xrenne/projects/libs/a.out"
+  }
+]
