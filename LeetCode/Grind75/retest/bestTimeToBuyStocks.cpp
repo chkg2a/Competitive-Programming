@@ -1,5 +1,6 @@
 // 0:55
 // 3:00
+// 1:07
 #include <algorithm>
 #include <bits/stdc++.h>
 #include <climits>
@@ -14,7 +15,8 @@ public:
 
 int main () {
   Solution sol;
-  vector<int> prices = {2,4,1};
+  /*vector<int> prices = {2,4,1}; // 2*/
+  vector<int> prices = {7,1,5,3,6,4}; // 5
   cout << sol.maxProfit(prices);
 
   return 0;
