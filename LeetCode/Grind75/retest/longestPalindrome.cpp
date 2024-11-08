@@ -1,4 +1,5 @@
 // 1:14
+// 2:00
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -10,8 +11,8 @@ public:
 };
 
 int main() {
-  /*string s = "abccccdd"; //7*/
-  string s = "abaa"; //3
+  string s = "abccccdd"; //7
+  /*string s = "abaa"; //3*/
   Solution sol;
   cout << sol.longestPalindrome(s);
 
