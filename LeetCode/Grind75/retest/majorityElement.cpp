@@ -1,35 +1,13 @@
 // 4:30
 // 2:08
 // 2:30
+// 1:34
 #include <bits/stdc++.h>
 using namespace std;
 
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-      int candidate = 0;
-      int count = 0;
-      for(int i : nums){
-        if(count == 0){
-          candidate =i;
-          count++;
-        }
-        if(candidate == i){
-          count++;
-        }else{
-          count = 0;
-        }
-      }
-      count = 0;
-      for(int i : nums){
-        if(candidate == i){
-          count++;
-        }
-      }
-      if(count >= nums.size()/2){
-        return candidate;
-      }
-      return -1;
     }
 };
 

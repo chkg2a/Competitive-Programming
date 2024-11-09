@@ -1,5 +1,6 @@
 // 1:25
 // 0:56
+// 0:46
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,6 +1,7 @@
 // 1:30
 // 2:10
 // 2:50
+// 1:27
 #include <bits/stdc++.h>
 #include <cctype>
 using namespace std;
@@ -13,8 +14,8 @@ public:
 
 int main () {
   Solution sol;
-  string s = "A man, a plan, a canal: Panama"; // 1
-  /*string s = "race a car"; // 0*/
+  /*string s = "A man, a plan, a canal: Panama"; // 1*/
+  string s = "race a car"; // 0
   cout << sol.isPalindrome(s);
   return 0;
 }

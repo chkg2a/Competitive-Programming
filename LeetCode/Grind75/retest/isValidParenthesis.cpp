@@ -1,6 +1,7 @@
 // 1:31
 // 3:41
 // 1:27
+// 1:20
 #include <bits/stdc++.h>
 #include <unordered_map>
 using namespace std;
@@ -12,8 +13,8 @@ public:
 };
 
 int main () {
-  /*string s = "({[]}))"; // 0*/
-  string s = "({[]})"; // 1
+  string s = "({[]}))"; // 0
+  /*string s = "({[]})"; // 1*/
   Solution sol;
   cout << sol.isValid(s);
 
