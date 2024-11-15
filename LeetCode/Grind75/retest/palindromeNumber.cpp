@@ -1,3 +1,4 @@
+// 2:11
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,8 +9,8 @@ public:
 };
 
 int main () {
-  /*int x = 121; // 1*/
-  int x = 1123521; // 0
+  int x = 121; // 1
+  /*int x = 1123521; // 0*/
   Solution sol;
   cout << sol.isPalindrome(x);
 

@@ -1,3 +1,4 @@
+// 0:27
 #include <bits/stdc++.h>
 #include <climits>
 using namespace std;
@@ -9,7 +10,8 @@ public:
 };
 
 int main() {
-  vector<int> nums = {2, 2, 1};
+  vector<int> nums = {2, 2, 1}; // 1
+  /*vector<int> nums = {4,1,2, 2, 1}; // 4*/
   Solution sol;
   cout << sol.singleNumber(nums);
 

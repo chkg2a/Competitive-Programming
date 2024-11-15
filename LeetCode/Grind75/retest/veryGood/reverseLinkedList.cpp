@@ -2,6 +2,7 @@
 // 1:34
 // 1:25
 // 0:32
+// 0:42
 
 #include <bits/stdc++.h>
 #include <chkg2a/fn_ll.h>

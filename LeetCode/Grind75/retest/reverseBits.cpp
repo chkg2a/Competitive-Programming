@@ -8,7 +8,7 @@ public:
 };
 
 int main () {
-  uint32_t n = 0b00000010100101000001111010011100;
+  uint32_t n = 0b00000010100101000001111010011100; // 964176192
   Solution sol;
   cout << sol.reverseBits(n);
 

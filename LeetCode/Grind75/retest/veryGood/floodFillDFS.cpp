@@ -2,6 +2,7 @@
 // 6:08
 // 4:50
 // 3:44
+// 2:50
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -19,10 +20,10 @@ int main() {
   // 2 2 2
   // 2 2 0
   // 2 0 1
-  vector<vector<int>> image = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
+  /*vector<vector<int>> image = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};*/
   // 2 2 2
   // 2 2 2
-  /*vector<vector<int>> image = {{0, 0, 0}, {0, 0, 0}};*/
+  vector<vector<int>> image = {{0, 0, 0}, {0, 0, 0}};
   int sr = 1, sc = 1, color = 2;
   Solution sol;
   for (vector<int> i : sol.floodFill(image, sr, sc, color)) {
