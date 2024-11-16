@@ -1,19 +1,16 @@
-// 2:11
-// 1:18
 #include <bits/stdc++.h>
+#include <chkg2a/fn_ll.h>
 using namespace std;
+using namespace chk;
 
 class Solution {
 public:
-    bool isPalindrome(int x) {
+    bool hasCycle(ListNode *head) {
     }
 };
 
 int main () {
-  /*int x = 121; // 1*/
-  int x = 1123521; // 0
   Solution sol;
-  cout << sol.isPalindrome(x);
 
   return 0;
 }

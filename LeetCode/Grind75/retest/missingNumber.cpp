@@ -1,4 +1,5 @@
 // 0:52
+// 0:43
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,8 +10,8 @@ public:
 };
 
 int main () {
-  /*vector<int> nums = {3,0,1}; // 2*/
-  vector<int> nums = {0,1,2,4}; // 3
+  vector<int> nums = {3,0,1}; // 2
+  /*vector<int> nums = {0,1,2,4}; // 3*/
   Solution sol;
   cout << sol.missingNumber(nums);
 
