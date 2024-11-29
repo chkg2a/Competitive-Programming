@@ -1,6 +1,7 @@
 // 2:08
 // 1:23
 // 0:57
+// 3:10
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,6 +31,14 @@ struct TreeNode {
 class Solution {
 public:
   TreeNode *invertTree(TreeNode *root) {
+    while(root != NULL){
+      TreeNode * temp = root->left;
+      root->left = root->right;
+      root->right = root->left;
+      return invertTree(root->left);
+      return invertTree(root->right);
+    }
+    return root;
   }
 };
 

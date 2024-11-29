@@ -1,5 +1,6 @@
 // 0:35, 3:04
 // 0:30, 1:29
+// 0:56
 
 #include <bits/stdc++.h>
 #include <unordered_map>
@@ -7,7 +8,9 @@ using namespace std;
 
 class Solution {
 public:
-  int climbStairs(int n, unordered_map<int,int> memo){
+  int climbStairs(int n){
+  }
+  int climbStairs(int n, unordered_map<int,int> & memo){
   }
 };
 
