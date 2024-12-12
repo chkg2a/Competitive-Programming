@@ -2,6 +2,7 @@
 // 2:08
 // 2:30
 // 1:34
+// 2:27
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,8 +13,8 @@ public:
 };
 
 int main () {
-  vector<int> nums = { 2,2,1,1,1,2,2 }; // 2
-  /*vector<int> nums = { 2,2,1,1 }; // -1*/
+  /*vector<int> nums = { 2,2,1,1,1,2,2 }; // 2*/
+  vector<int> nums = { 2,2,1,1 }; // -1
   Solution sol;
   cout << sol.majorityElement(nums);
   return 0;

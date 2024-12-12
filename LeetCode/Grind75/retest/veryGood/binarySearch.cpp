@@ -3,6 +3,7 @@
 // 1:12
 // 0:54
 // 1:53
+// 1:22
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,7 +14,7 @@ public:
 };
 
 int main () {
-  vector<int> nums = {-1,0,3,5,9,12};
+  vector<int> nums = {-1,0,3,5,9,12}; // 4
   int target = 9;
   Solution sol;
   cout << sol.search(nums, target);

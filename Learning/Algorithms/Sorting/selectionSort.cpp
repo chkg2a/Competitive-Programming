@@ -1,34 +1,22 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include<chkg2a/fn_utility.h>
 
-void selectionSort(int arr[], const int & size){
-  for(int i = 0; i < size - 1; i++){
-    int currentMin = i; 
-    for(int j = i+1; j < size; j++){
-      if(arr[currentMin] > arr[j]){
-        currentMin = j;
+void selectionSort(int * arr, const int & size){
+  for(int i =0; i < size; i++){
+    int maxI = i;
+    for(int j =i+1; j < size +1; j++){
+      if(arr[maxI] > arr[j]){
+        arr[j] ^= arr[maxI];
+        arr[maxI] ^= arr[j];
+        arr[j] ^= arr[maxI];
       }
     }
-    if(currentMin != i){
-      swap(arr[i],arr[currentMin]);
-    }
   }
 }
 
-void displayArr(int arr[], const int & size){
-  for(int i = 0; i < size; i++){
-    cout << arr[i] << ' ';
-  }
-  cout << endl;
-}
-
-int main () {
-  const int size = 6;
-  int arr[size] = {6,5,3,2,1,4};
-
-  displayArr(arr,size);
-  selectionSort(arr, size);
-  displayArr(arr,size);
-
-  return 0;
+int main(){
+  const int size = 7;
+  int arr[size] = {5,1,6,9,10,7,2};
+  chk::display_arr(arr,size);
+  selectionSort(arr,size);
+  chk::display_arr(arr,size);
 }
