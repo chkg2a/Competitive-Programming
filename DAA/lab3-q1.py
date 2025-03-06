@@ -4,21 +4,21 @@ import matplotlib.pyplot as plt
 
 def unordered_dc_search(L, x):
     comparisons = [0]
-
-    def search_helper(L, x, offset):
+    def search_helper(L, x, offset=0):
         if len(L) == 1:
             comparisons[0] += 1
             return offset if L[0] == x else -1
-
+        
         mid = len(L) // 2
         i = search_helper(L[:mid], x, offset)
         if i != -1:
             return i
+            
         j = search_helper(L[mid:], x, offset + mid)
         return j
-
+        
     time_start = time.time()
-    index = search_helper(L, x, 0)
+    index = search_helper(L, x)
     return index, round((time.time() - time_start) * 1000, 4), comparisons[0]
 
 def binary_search(L, x):
@@ -92,17 +92,17 @@ def run_experiment(n, search_function, sort_before=False):
     }
 
     for size in n:
-        first_ele = random.randint(1, 10000)
+        first_ele = random.randint(1, 100000)
         last_ele = first_ele
         while last_ele == first_ele:
-            last_ele = random.randint(1, 10000)
-        not_found = 100001  
+            last_ele = random.randint(1, 100000)
+        not_found = 1000001
 
         L = [first_ele]
         unique_numbers = {first_ele}
         for _ in range(size - 2):
             while True:
-                num = random.randint(1, 10000)
+                num = random.randint(1, 100000)
                 if num not in unique_numbers:
                     L.append(num)
                     unique_numbers.add(num)
@@ -113,9 +113,10 @@ def run_experiment(n, search_function, sort_before=False):
         if sort_before:
             L.sort()
 
-        index, t_value_first_ele, e_value_first_ele = search_function(L, first_ele)
-        index, t_value_last_ele, e_value_last_ele = search_function(L, last_ele)
-        index, t_value_not_found, e_value_not_found = search_function(L, not_found)
+        i, t_value_first_ele, e_value_first_ele = search_function(L, L[0])
+        j, t_value_last_ele, e_value_last_ele = search_function(L, L[-1])
+        k, t_value_not_found, e_value_not_found = search_function(L, not_found)
+        print(f"{search_function.__name__} : {i} {j} {k}")
 
         datas["cmp 1st"].append(e_value_first_ele)
         datas["cmp last"].append(e_value_last_ele)
