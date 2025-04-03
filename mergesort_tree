@@ -1,23 +1,29 @@
 digraph {
-	"MergeSort(0, 7)" [label="MergeSort(0, 7)"]
-	"MergeSort(0, 7)" -> "MergeSort(0, 3)"
-	"MergeSort(0, 3)" -> "MergeSort(0, 1)"
-	"Merge(0, 0, 1)" [label="Merge(0, 0, 1)"]
-	"MergeSort(0, 1)" -> "Merge(0, 0, 1)"
-	"MergeSort(0, 3)" -> "MergeSort(2, 3)"
-	"Merge(2, 2, 3)" [label="Merge(2, 2, 3)"]
-	"MergeSort(2, 3)" -> "Merge(2, 2, 3)"
-	"Merge(0, 1, 3)" [label="Merge(0, 1, 3)"]
-	"MergeSort(0, 3)" -> "Merge(0, 1, 3)"
-	"MergeSort(0, 7)" -> "MergeSort(4, 7)"
-	"MergeSort(4, 7)" -> "MergeSort(4, 5)"
-	"Merge(4, 4, 5)" [label="Merge(4, 4, 5)"]
-	"MergeSort(4, 5)" -> "Merge(4, 4, 5)"
-	"MergeSort(4, 7)" -> "MergeSort(6, 7)"
-	"Merge(6, 6, 7)" [label="Merge(6, 6, 7)"]
-	"MergeSort(6, 7)" -> "Merge(6, 6, 7)"
-	"Merge(4, 5, 7)" [label="Merge(4, 5, 7)"]
-	"MergeSort(4, 7)" -> "Merge(4, 5, 7)"
-	"Merge(0, 3, 7)" [label="Merge(0, 3, 7)"]
-	"MergeSort(0, 7)" -> "Merge(0, 3, 7)"
+	"Merge Sort(0,9)" [label="Merge Sort(0,9)"]
+	"Merge Sort(0,9)" -> "Merge Sort(0,4)"
+	"Merge Sort(0,4)" -> "Merge Sort(0,2)"
+	"Merge Sort(0,2)" -> "Merge Sort(0,1)"
+	"Merge(0,0,1)" [label="Merge(0,0,1)"]
+	"Merge Sort(0,1)" -> "Merge(0,0,1)"
+	"Merge(0,1,2)" [label="Merge(0,1,2)"]
+	"Merge Sort(0,2)" -> "Merge(0,1,2)"
+	"Merge Sort(0,4)" -> "Merge Sort(3,4)"
+	"Merge(3,3,4)" [label="Merge(3,3,4)"]
+	"Merge Sort(3,4)" -> "Merge(3,3,4)"
+	"Merge(0,2,4)" [label="Merge(0,2,4)"]
+	"Merge Sort(0,4)" -> "Merge(0,2,4)"
+	"Merge Sort(0,9)" -> "Merge Sort(5,9)"
+	"Merge Sort(5,9)" -> "Merge Sort(5,7)"
+	"Merge Sort(5,7)" -> "Merge Sort(5,6)"
+	"Merge(5,5,6)" [label="Merge(5,5,6)"]
+	"Merge Sort(5,6)" -> "Merge(5,5,6)"
+	"Merge(5,6,7)" [label="Merge(5,6,7)"]
+	"Merge Sort(5,7)" -> "Merge(5,6,7)"
+	"Merge Sort(5,9)" -> "Merge Sort(8,9)"
+	"Merge(8,8,9)" [label="Merge(8,8,9)"]
+	"Merge Sort(8,9)" -> "Merge(8,8,9)"
+	"Merge(5,7,9)" [label="Merge(5,7,9)"]
+	"Merge Sort(5,9)" -> "Merge(5,7,9)"
+	"Merge(0,4,9)" [label="Merge(0,4,9)"]
+	"Merge Sort(0,9)" -> "Merge(0,4,9)"
 }

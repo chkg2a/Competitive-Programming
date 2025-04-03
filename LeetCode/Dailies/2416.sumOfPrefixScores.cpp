@@ -6,6 +6,8 @@ struct TrieNode {
   int cnt = 0;
 };
 
+// What the shift is not work fj?
+
 TrieNode root;
 
 void insert(string word) {

@@ -13,15 +13,19 @@ def Guess(x, n, tree, parent_id=None, node_id=None):
         return x
     if n & 1 == 0:
         child_id = f"Guess({x+x},{n//2})"
+        print(child_id)
         result = Guess(x+x,n//2,tree, node_id, child_id)
         return result
     else:
         child_id = f"Guess({x+x},{n//2})"
+        print(child_id)
         result = x + Guess(x+x,n//2,tree,node_id, child_id)
         return result
 
 def visualize_graph(x,n):
     dgraph = graphviz.Digraph(comment=f"Graph Representation of Guess({x},{n})")
+    child_id = f"Guess({x},{n})"
+    print(child_id)
     result = Guess(x,n,dgraph)
     dgraph.attr(label=f"Recursion Tree for Guess({x},{n}) = {result}")
     return dgraph
@@ -30,4 +34,4 @@ for params in [[3,7], [5,20],[6,9]]:
     x, n = params
     tree = visualize_graph(x,n)
     tree.render(filename=f"guess_tree_{x}_{n}", format="png", cleanup=True)
-    print(f"Successfully saved for Guess({x},{n})")
+    print(f"Successfully saved for Guess({x},{n})\n")
